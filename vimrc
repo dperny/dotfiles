@@ -13,6 +13,9 @@ set laststatus=2
 syntax on
 filetype plugin indent on
 
+" i will never, ever use Modula-2 in my life. *.md is always markdown
+autocmd BufNewFile,Bufread *.md set filetype=markdown
+
 " line numbering settings
 " set both for magic
 set relativenumber
