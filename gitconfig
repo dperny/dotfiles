@@ -6,3 +6,5 @@
 [core]
 	excludesfile = /Users/dperny/.gitignore_global
 	ignorecase = false
+[github]
+	user = dperny

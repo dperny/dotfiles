@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-export PATH="/Users/dperny/.rvm/gems/ruby-1.9.3-p545/bin:/Users/dperny/.rvm/gems/ruby-1.9.3-p545@global/bin:/Users/dperny/.rvm/rubies/ruby-1.9.3-p545/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/bin:/Users/dperny/.rvm/bin:/usr/texbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$HOME/.rvm/bin:/usr/texbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
