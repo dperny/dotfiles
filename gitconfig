@@ -1,10 +1,10 @@
 [user]
 	name = Drew Erny
-	email = drewerny@gmail.com
+	email = drew.erny@docker.com
 [push]
 	default = simple
 [core]
-	excludesfile = /Users/dperny/.gitignore_global
+	excludesfile = /Users/drewerny/.gitignore_global
 	ignorecase = false
 [github]
 	user = dperny
