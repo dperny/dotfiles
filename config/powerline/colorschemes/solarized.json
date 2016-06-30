@@ -34,7 +34,7 @@
 
 
     "battery":                 { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": []       },
-    "battery_gradient":        { "fg": "solarized:red_solarized:base3", "bg": "solarized:base02", "attrs": [] },
+    "battery_gradient":        { "fg": "solarized:red", "bg": "solarized:base02", "attrs": [] },
     "battery_full":            { "fg": "solarized:red", "bg": "solarized:base02", "attrs":[]          },
     "battery_empty":           { "fg": "solarized:base3", "bg": "solarized:base02", "attrs": []       },
 

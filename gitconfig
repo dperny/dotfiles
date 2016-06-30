@@ -1,6 +1,7 @@
 [user]
 	name = Drew Erny
 	email = drew.erny@docker.com
+	signingkey = drew.erny@docker.com
 [push]
 	default = simple
 [core]
