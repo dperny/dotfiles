@@ -55,7 +55,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vim=nvim
+# alias reallyvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$HOME/.rvm/bin:/usr/texbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
