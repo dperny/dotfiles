@@ -65,6 +65,7 @@ set nohlsearch  " do not highlight the search term
 " customizations for airline {{{
   let g:airline_theme='solarized'
   let g:airline_powerline_fonts = 1
+  let g:airline#extensions#tabline#enabled = 1
 " }}}
 
 " Summon extra windows with <leader>
