@@ -14,6 +14,10 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'fatih/vim-go'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 
+" tagbar isn't essential but i've wished i had it a couple of times so we're
+" gonna pick it up and see how it works
+Plug 'majutsushi/tagbar'
+
 " Colorscheme
 Plug 'altercation/vim-colors-solarized'
 
@@ -70,7 +74,7 @@ set nohlsearch  " do not highlight the search term
 
 " Summon extra windows with <leader>
 nmap <leader>n :NERDTreeToggle <CR>
-" nmap <leader>t :TagbarToggle <CR>
+nmap <leader>t :TagbarToggle <CR>
 
 " configure for solarized colorscheme
 set background=dark
@@ -84,6 +88,7 @@ colorscheme solarized
   let g:go_highlight_structs = 1
   let g:go_highlight_operators = 1
   let g:go_highlight_fields = 1
+  " leader key mappings for vimgo
   au Filetype go nmap <Leader>gd <Plug>(go-doc)
 " }}}
 
