@@ -1,19 +1,19 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/Users/drewerny/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-
+# ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -27,8 +27,8 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to disable command auto-correction.
-# DISABLE_CORRECTION="true"
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -49,26 +49,24 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git docker)
 
 # User configuration
 
-#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias vim=nvim
-# alias reallyvim='/Applications/MacVim.app/Contents/MacOS/Vim'
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$HOME/.rvm/bin:/usr/texbin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+   export EDITOR='nvim'
 # else
-#  export EDITOR='mvim'
+#   export EDITOR='mvim'
 # fi
 
 # Compilation flags
@@ -76,4 +74,31 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$HOME/.rvm/b
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-export EMAIL="dperny@crimson.ua.edu"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+hash -d testkit="$GOPATH/src/github.com/docker/testkit"
+hash -d e2e="$GOPATH/src/github.com/docker/e2e"
+hash -d orca="$GOPATH/src/github.com/docker/orca"
+hash -d swarmkit="$GOPATH/src/github.com/docker/swarmkit"
+hash -d docker="$GOPATH/src/github.com/moby/moby"
+hash -d swarm="$GOPATH/src/github.com/docker/swarm"
+hash -d kube="$GOPATH/src/github.com/kubernetes/kubernetes"
+
+alias testkit="testkit -f $HOME/.testkit/config.yml"
+
+export DEFAULT_USER="drewerny"
+
+# Add Go to path
+export GOPATH="$HOME/gocode"
+export PATH="$PATH:$GOPATH/bin"
+
+# Add powerline config to
+export POWERLINE_CONFIG_COMMAND="$HOME/Library/Python/2.7/bin/powerline-config"
+export PATH="$PATH:$HOME/Library/Python/2.7/bin/"
